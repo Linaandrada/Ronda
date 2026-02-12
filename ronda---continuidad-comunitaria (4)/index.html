@@ -1,0 +1,86 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RONDA</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,200..900;1,200..900&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'ronda-bg': '#E4E2DC',
+                        'ronda-primary': '#1A1A1A',
+                        'ronda-accent': '#E94128',
+                        'ronda-gray': '#444444',
+                        'ronda-gray-light': '#A7A7A7',
+                        'ronda-white': '#FFFFFF',
+                    },
+                    fontFamily: {
+                        crimson: ['"Crimson Pro"', 'serif'],
+                        inter: ['Inter', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            background-color: #E4E2DC;
+            color: #1A1A1A;
+            font-family: 'Crimson Pro', serif;
+            margin: 0;
+            -webkit-font-smoothing: antialiased;
+        }
+        /* Custom scrollbar to match editorial feel */
+        ::-webkit-scrollbar {
+            width: 6px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #E4E2DC;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #A7A7A7;
+        }
+        .text-h1 { font-family: 'Crimson Pro'; font-weight: 300; font-style: italic; font-size: 120px; line-height: 1; }
+        .text-body { font-family: 'Crimson Pro'; font-weight: 400; font-size: 24px; line-height: 1.5; }
+        .text-button { font-family: 'Inter'; font-weight: 600; font-size: 14px; text-transform: uppercase; letter-spacing: 0.05em; }
+        .text-title-1 { font-family: 'Crimson Pro'; font-weight: 300; font-style: italic; font-size: 36px; line-height: 1.2; }
+        .text-title-2 { font-family: 'Crimson Pro'; font-weight: 300; font-size: 30px; line-height: 1.2; }
+        .text-subtitle-small { font-family: 'Inter'; font-weight: 400; font-size: 12px; text-transform: uppercase; letter-spacing: 0.1em; }
+        .text-nav { font-family: 'Inter'; font-weight: 500; font-size: 14px; text-transform: uppercase; letter-spacing: 0.1em; }
+        
+        @media (max-width: 768px) {
+            .text-h1 { font-size: 64px; }
+            .text-body { font-size: 18px; }
+        }
+
+        .line-clamp-3 {
+            display: -webkit-box;
+            -webkit-line-clamp: 3;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+        }
+    </style>
+<script type="importmap">
+{
+  "imports": {
+    "react-dom/": "https://esm.sh/react-dom@^19.2.4/",
+    "react/": "https://esm.sh/react@^19.2.4/",
+    "react": "https://esm.sh/react@^19.2.4",
+    "react-router-dom": "https://esm.sh/react-router-dom@^7.13.0"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+<body>
+    <div id="root"></div>
+<script type="module" src="/index.tsx"></script>
+</body>
+</html>
